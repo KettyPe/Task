@@ -150,6 +150,7 @@ body {
 }
 
 .arrow-button {
+  padding-top: 6px;
   cursor: pointer;
   width: 64px;
   height: 64px;
@@ -184,9 +185,78 @@ body {
   text-transform: uppercase;
 }
 
+.footer {
+  margin-bottom: 160px;
+}
+.footer__container {
+  position: relative;
+}
+.footer__container::before {
+  content: "";
+  position: absolute;
+  height: 618px;
+  width: 1440px;
+  top: 0;
+  left: -225px;
+  background: url(../img/gradient-3.webp) no-repeat;
+}
+.footer__body {
+  display: flex;
+  position: relative;
+}
+.footer__title {
+  margin-right: 130px;
+}
+.footer__form {
+  flex: 1 1 auto;
+}
+.footer__text {
+  position: relative;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: -140px;
+}
+.footer__policy {
+  text-decoration: underline !important;
+  transition: 0.3s;
+}
+.footer__policy:hover {
+  color: #efc247;
+}
+
+.form {
+  z-index: 2;
+}
+.form__item {
+  margin-bottom: 28px;
+}
+.form__input {
+  width: 100%;
+  padding: 12px 20px;
+  backdrop-filter: blur(40.7742px);
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  color: #ffffff;
+}
+.form__input::placeholder {
+  color: #e9f1ff;
+}
+.form__input:focus {
+  background: rgba(255, 255, 255, 0.0001);
+  border: 2px solid #881843;
+}
+.form__button {
+  margin-top: 2px;
+  height: auto;
+}
+.form__button-button {
+  text-align: right;
+}
+
 .mainblock {
   position: relative;
-  background-image: url(../img/gradient.png);
+  background-image: url(../img/gradient.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -243,7 +313,7 @@ body {
 }
 
 .info-main {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -369,7 +439,7 @@ body {
   position: absolute;
   width: 1140px;
   height: 2px;
-  border: 1px solid;
+  background: linear-gradient(105.94deg, #0015B1 16.55%, #C302D5 126.32%);
   opacity: 0.2;
 }
 
@@ -576,6 +646,9 @@ body {
     margin-left: 53px;
     margin-top: -54px;
   }
+  .footer__title {
+    margin-right: 50px;
+  }
 }
 @media (max-width: 768px) {
   .menu__list {
@@ -661,6 +734,42 @@ body {
   .program {
     margin-bottom: -28px;
   }
+  .footer__body {
+    display: block;
+  }
+  .footer__text {
+    margin-top: 65px;
+  }
+  .footer {
+    margin-bottom: 71px;
+    padding-top: 63px;
+    position: relative;
+  }
+  .footer:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(138.91deg, #0015B1 23.29%, #C302D5 88.99%);
+    opacity: 0.5;
+  }
+  .footer__container::before {
+    top: 108px;
+  }
+  .footer__title {
+    margin-bottom: 40px;
+  }
+  .footer__container {
+    padding: 0px 40px;
+  }
+  .media {
+    margin-bottom: 63px;
+  }
+  .height {
+    margin-bottom: 55px;
+  }
 }
 @media (max-width: 520px) {
   .btn {
@@ -714,6 +823,9 @@ body {
   .media {
     margin-left: 20px;
   }
+  .media__items {
+    margin: 0;
+  }
   .media__text {
     font-size: 18px;
     line-height: 28px;
@@ -731,6 +843,16 @@ body {
     line-height: 36px;
     text-align: right;
     margin-left: 60px;
+  }
+  .form__button {
+    width: 100%;
+  }
+  .footer__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer__title {
+    margin-right: 0;
   }
 }
 @media (max-width: 427px) {
@@ -774,19 +896,30 @@ body {
   }
   .item-program {
     padding: 15px;
-    margin-bottom: 15px;
   }
   .program__item_btn {
     margin-left: 15px;
-  }
-  .program__items {
-    display: block;
   }
   .media__item {
     flex: 0 0 150px;
     padding: 0px 6px;
   }
   .media__plus {
-    margin-left: 0px;
+    margin-left: 52px;
+  }
+  .footer__container {
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .program__items {
+    display: block;
+  }
+  .program__item {
+    margin-bottom: 20px;
+  }
+  .media__items {
+    margin: 0px -20px;
   }
 }
