@@ -239,13 +239,18 @@ body {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 5px;
   color: #ffffff;
+  outline: 0;
+  transition: .3s;
 }
 .form__input::placeholder {
   color: #e9f1ff;
 }
 .form__input:focus {
   background: rgba(255, 255, 255, 0.0001);
-  border: 2px solid #881843;
+  border: 2px solid #EFC247;
+}
+.form__input.error {
+  border-color: red;
 }
 .form__button {
   margin-top: 2px;
