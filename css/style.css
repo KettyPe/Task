@@ -197,8 +197,9 @@ body {
   height: 618px;
   width: 1440px;
   top: 0;
-  left: -225px;
-  background: url(../img/gradient-3.webp) no-repeat;
+  left: -248px;
+  background-image: url(../img/grd-footer.png);
+  background-size: cover;
 }
 .footer__body {
   display: flex;
@@ -256,7 +257,7 @@ body {
 
 .mainblock {
   position: relative;
-  background-image: url(../img/gradient.webp);
+  background-image: url(../img/grd-new.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
